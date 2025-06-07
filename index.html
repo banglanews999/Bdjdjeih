@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>লিংক টাইমার + অ্যাড</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      padding: 20px 25px;
+      border-radius: 16px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    #countdown {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    #getLink {
+      display: none;
+      padding: 14px 24px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    #getLink:hover {
+      background-color: #0056b3;
+    }
+
+    .ad {
+      margin: 15px 0;
+    }
+
+    @media (max-width: 400px) {
+      #countdown { font-size: 20px; }
+      #getLink { font-size: 16px; padding: 12px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- 📢 Ad 1 (Top Ad) -->
+    <div class="ad">
+      <script type="text/javascript">
+        atOptions = {
+          'key' : '7794ca3a49231eb9f1212ca66c3761d0',
+          'format' : 'iframe',
+          'height' : 50,
+          'width' : 320,
+          'params' : {}
+        };
+      </script>
+      <script type="text/javascript" src="//www.highperformanceformat.com/7794ca3a49231eb9f1212ca66c3761d0/invoke.js"></script>
+    </div>
+
+    <!-- ⏱ Countdown -->
+    <div id="countdown">দয়া করে অপেক্ষা করুন... 10 সেকেন্ড</div>
+
+    <!-- 📢 Ad 2 (Middle Ad) -->
+    <div class="ad">
+      <script async="async" data-cfasync="false" src="//pl26639970.profitableratecpm.com/a1f6f8a4671f786f7d8d7ebb4c59549a/invoke.js"></script>
+      <div id="container-a1f6f8a4671f786f7d8d7ebb4c59549a"></div>
+    </div>
+
+    <!-- 🔗 Get Link -->
+    <a id="getLink" href="https://www.mediafire.com/file/b8p9ui4nef8vuj2/Video+AI_3.3.2.apk/file"_blank">🔗 Get Link</a>
+
+    <!-- 📢 Ad 3 (Bottom Ad) -->
+    <div class="ad">
+      <script type='text/javascript' src='//pl26856546.profitableratecpm.com/b7/34/cd/b734cdea62195ea9c94c35ad6755066b.js'></script>
+    </div>
+
+  </div>
+
+  <!-- ⏱ Countdown Script -->
+  <script>
+    let timeLeft = 10;
+    const countdownEl = document.getElementById("countdown");
+    const linkBtn = document.getElementById("getLink");
+
+    const timer = setInterval(() => {
+      timeLeft--;
+      if (timeLeft > 0) {
+        countdownEl.textContent = `দয়া করে অপেক্ষা করুন... ${timeLeft} সেকেন্ড`;
+      } else {
+        clearInterval(timer);
+        countdownEl.style.display = "none";
+        linkBtn.style.display = "inline-block";
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
